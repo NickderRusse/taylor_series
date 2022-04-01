@@ -20,7 +20,7 @@ double cosine(double x){
 	
 	// using taylor series to calculate cosine
 	double sign_val = 1., pwr_x = 1., res = 0.;
-	for(unsigned int i = 0; i<fact_length; i+=2){
+	for(unsigned int i = 0; i<fact_length; i+=2){ 		// do a for-loop to execute the following code repeatedly 
 		res += sign_val * pwr_x * inv_factorials[i];	// <=> sum_{i=0}^n (-1)^i * x^(2*i) / (2*i)! or 1 - x^2/2! + x^4/4! - x^6/6! + ...
 
 		sign_val *= -1;
